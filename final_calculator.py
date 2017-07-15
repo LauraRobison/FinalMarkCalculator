@@ -36,7 +36,7 @@ def calculate_final():
     percent_grades = []
     final_location = total_lines() - 1
 
-    with open(FILE_NAME, 'r+') as fname:
+    with open(FILE_NAME, 'r') as fname:
         for line, info in enumerate(fname):
             info = info.strip().split(',')
             if line is 0:
